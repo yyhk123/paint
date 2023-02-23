@@ -1,0 +1,54 @@
+html, body {
+  touch-action: pan-x pan-y;
+  user-select: none;
+  zoom: reset;
+}
+
+body{
+  margin: 0;
+}
+
+html{
+  background-color: #222;
+}
+
+@media (max-width: 600px) {
+  html, body {
+    touch-action: pan-x pan-y;
+    user-select: none;
+    zoom: 1.0;
+  }
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+canvas {
+  touch-action: pan-x pan-y;
+  background-color: azure;
+}
+
+#pickerStyle {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+#pickerStyle::-webkit-color-swatch{
+  width: 100%;
+  height: 100%;
+}
